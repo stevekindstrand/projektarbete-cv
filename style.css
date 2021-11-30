@@ -1,0 +1,11 @@
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+input, button {
+    height: 20px;
+}

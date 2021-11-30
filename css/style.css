@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* Variabler för de olika färgerna jag använt på sidan. */
+/* Jag la till en mixin här mest för att visa att jag förstår hur det fungerar. */
+/*****
+Body & Container
+ *****/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #b9d3da;
+  color: #363636;
+}
+
+.container {
+  margin: 20px;
+  max-width: 700px;
+  border: 1px solid;
+  -webkit-box-shadow: 5px 10px;
+          box-shadow: 5px 10px;
+  background: #e2e2e2;
+}
+
+.container hr {
+  border: 1px solid;
+}
+
+/*****
+HEADER
+ *****/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* HEADER LEFT */
+header .header-left {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  padding: 40px 40px 0 40px;
+}
+
+header .header-left h1 {
+  margin: 0;
+  line-height: 95%;
+}
+
+header .header-left p {
+  margin: 0;
+}
+
+/* HEADER RIGHT */
+header .header-right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 40px 0 0 40px;
+}
+
+header .header-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-right a {
+  text-decoration: none;
+  color: #363636;
+  margin-left: 20px;
+}
+
+header .header-right a:hover {
+  color: #00458f;
+}
+
+/*****
+MAIN CONTENT
+ *****/
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* MAIN CONTENT: LEFT */
+.main-content .main-left {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  padding: 40px;
+  /* Ikonerna är länkade till Wikipedia för att förtydliga */
+}
+
+.main-content .main-left img {
+  border: 3px solid;
+  border-radius: 100%;
+  padding: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content .main-left h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-content .main-left p {
+  margin-top: 18.720px;
+}
+
+.main-content .main-left .competence {
+  margin-top: 20px;
+}
+
+.main-content .main-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .main-left a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.main-content .main-left a:hover {
+  color: #00458f;
+}
+
+/* MAIN CONTENT: RIGHT */
+.main-content .main-right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 40px;
+  /* Ikonerna är länkade till Wikipedia för att förtydliga */
+}
+
+.main-content .main-right h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-content .main-right h3 {
+  margin-bottom: 0;
+}
+
+.main-content .main-right i {
+  margin: 0;
+}
+
+.main-content .main-right .hobbys {
+  margin-top: 20px;
+}
+
+.main-content .main-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .main-right a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.main-content .main-right a:hover {
+  color: #00458f;
+}
+
+/*****
+MEDIA QUERY
+ *****/
+/* Jag har bara använt en Media query då jag tycker att det räckte för min design.
+ Sidan är responsiv i desktop, tablet samt mobilvy.
+ 
+ Jag valde 700px max-width eftersom bredden på själva CV't har samma storlek. */
+@media only screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+  .container {
+    margin: 0;
+    border: none;
+  }
+  header .header-left p {
+    margin-bottom: 20px;
+  }
+  header, .main-content {
+    display: block;
+  }
+  .main-content .main-left {
+    padding-bottom: 0;
+  }
+  .main-content .main-right {
+    padding-top: 0;
+  }
+  header .header-right {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

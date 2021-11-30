@@ -1,0 +1,39 @@
+/*****
+HEADER
+ *****/
+
+ header {
+    @include flexWrapCenter();
+}
+
+/* HEADER LEFT */
+header .header-left {
+    flex: 40%;
+    padding: 40px 40px 0 40px;
+    h1 {
+        margin: 0;
+        line-height: 95%;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+/* HEADER RIGHT */
+header .header-right {
+    flex: 60%;
+    padding: 40px 0 0 40px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: $textColor;
+        margin-left: 20px;
+    }
+    a:hover {
+        color: $linkColor;
+    }
+}

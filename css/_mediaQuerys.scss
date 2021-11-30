@@ -1,0 +1,33 @@
+/*****
+MEDIA QUERY
+ *****/
+
+ /* Jag har bara använt en Media query då jag tycker att det räckte för min design.
+ Sidan är responsiv i desktop, tablet samt mobilvy.
+ 
+ Jag valde 700px max-width eftersom bredden på själva CV't har samma storlek. */
+ @media only screen and (max-width: 700px) {
+    body {
+        display: block;
+    }
+    .container {
+        margin: 0;
+        border: none;
+    }
+    header .header-left p {
+        margin-bottom: 20px;
+    }
+    header, .main-content {
+        display: block;
+    }
+    .main-content .main-left {
+        padding-bottom: 0;
+    }
+    .main-content .main-right {
+        padding-top: 0;
+    }
+    header .header-right {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

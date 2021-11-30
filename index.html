@@ -1,24 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    <script defer src="script.js"></script>
+    <meta name="author" content="Steve Kindstrand">
+    <meta name="description" content="Steve Kindstrand's CV">
+    <meta name="keywords" content="Steve Kindstrand,HTML,CSS,JavaScript,CV,Resume">
+    <meta property="og:tiltle" content="Steve Kindstrand">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#"> <!-- Lägger till content när jag skaffa webhotell till sidan -->
+    <meta property="og:image" content="#"> <!-- Lägger till content när jag skaffa webhotell till sidan -->
+    <meta property="og:image:alt" content="#"> <!-- Lägger till content när jag skaffa webhotell till sidan -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/skfavicon.png">
+    <!-- Google font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <title>Steve Kindstrand - CV</title>
+    <script src="https://kit.fontawesome.com/f8afb7f078.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <fieldset>
-        <legend>Insert Data</legend>
-        <input id="inpKey" type="text" placeholder="Enter Key">
-        <input id="inpValue" type="text" placeholder="Enter Value">
-        <button type="button" id="btnInsert">Insert Data</button>
-    </fieldset>
-    <fieldset>
-        <legend>Local Storage</legend>
-        <div id="lsOutput"></div>
-    </fieldset>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Steve<br>Kindstrand</h1>
+                <p>Front End Developer </p>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><i class="fas fa-phone-square"></i><a href="tel:0765-564523">0765-56 45 23</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i><a href="https://www.eniro.se/steve+kindstrand/personer" target="_blank">Telivägen 1, 149 41 Nynäshamn</a></li>
+                    <li><i class="fas fa-globe-europe"></i><a href="mailto:stevekindstrand@gmail.com">stevekindstrand@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="main-left">
+                <img src="img/img.jpg" class="photo" alt="Steve Kindstrand" width="175" height="175">
+                <article>
+                    <h2>Om mig</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure enim ducimus dolor voluptas fugiat laboriosam doloremque inventore magni. Quidem ullam, magnam quibusdam numquam aspernatur, in dolores laborum facilis fugit officiis incidunt vel modi veritatis error, necessitatibus non porro? Reprehenderit facere, velit a rem eaque dicta omnis ex eligendi tenetur?</p>
+                </article>
+                <h2>Kompetens</h2>
+                <hr>
+                <div class="competence">
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><i class="fab fa-html5 fa-3x"></i></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><i class="fab fa-css3-alt fa-3x"></i></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><i class="fab fa-js-square fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-right">
+                <article>
+                    <h2>Erfarenhet</h2>
+                    <hr>
+                    <h3>Medieinstitutet</h3>
+                    <i>2021-</i><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, perferendis. Temporibus fugiat facilis, molestias, aspernatur quia veritatis velit assumenda vitae impedit doloremque hic quo accusantium officia dolore omnis veniam quisquam quibusdam asperiores magnam necessitatibus eligendi, explicabo nisi. Dicta, explicabo.</p>
+                </article>
+                <article>
+                    <h2>Utbildning</h2>
+                    <hr>
+                    <h3>Medieinstitutet</h3>
+                    <i>2021-</i><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, perferendis. Temporibus fugiat facilis, molestias, aspernatur quia veritatis velit assumenda vitae impedit doloremque hic quo accusantium officia dolore omnis veniam quisquam quibusdam asperiores magnam necessitatibus eligendi, explicabo nisi. Dicta, explicabo.</p>
+                </article>
+                <h2>Hobbys</h2>
+                <hr>        
+                <div class="hobbys">
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Video_game" target="_blank"><i class="fas fa-gamepad fa-2x"></i></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Film" target="_blank"><i class="fas fa-video fa-2x"></i></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Walking" target="_blank"><i class="fas fa-walking fa-2x"></i></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank"><i class="fas fa-code fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

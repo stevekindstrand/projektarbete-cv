@@ -1,0 +1,80 @@
+/*****
+MAIN CONTENT
+ *****/
+
+ .main-content {
+    @include flexWrapCenter();
+}
+
+/* MAIN CONTENT: LEFT */
+.main-content .main-left {
+    flex: 40%;
+    padding: 40px;
+    img {
+        border: 3px solid;
+        border-radius: 100%;
+        padding: 6px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 18.720px;
+    }
+    .competence {
+        margin-top: 20px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    /* Ikonerna är länkade till Wikipedia för att förtydliga */
+    a {
+        text-decoration: none;
+        color: $textColor;
+    }
+    a:hover {
+        color: $linkColor;
+    }
+}
+
+/* MAIN CONTENT: RIGHT */
+.main-content .main-right {
+    flex: 60%;
+    padding: 40px;
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    h3 {
+        margin-bottom: 0;
+    }
+    i {
+        margin: 0;
+    }
+    .hobbys {
+        margin-top: 20px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    /* Ikonerna är länkade till Wikipedia för att förtydliga */
+    a {
+        text-decoration: none;
+        color: $textColor;
+    }
+    a:hover {
+        color: $linkColor;
+    }
+}

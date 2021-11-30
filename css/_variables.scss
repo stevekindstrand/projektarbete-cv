@@ -1,0 +1,12 @@
+/* Variabler för de olika färgerna jag använt på sidan. */
+$backgroundColor: #b9d3da;
+$containerBackgroundColor: #e2e2e2;
+$linkColor: #00458f;
+$textColor: #363636;
+
+/* Jag la till en mixin här mest för att visa att jag förstår hur det fungerar. */
+@mixin flexWrapCenter() {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}

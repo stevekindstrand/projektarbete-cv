@@ -1,0 +1,28 @@
+/*****
+Body & Container
+ *****/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: $backgroundColor;
+    color: $textColor;
+}
+
+.container {
+    margin: 20px;
+    max-width: 700px;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+    background: $containerBackgroundColor;
+    hr {
+        border: 1px solid;
+    }
+}
